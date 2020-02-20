@@ -6,9 +6,11 @@ import Item from './ShoppingCartItem';
 const ShoppingCart = props => {
 	const getCartTotal = () => {
 		return props.cart.reduce((acc, value) => {
-			return acc + value.price;
+			return acc + value.item.price;
 		}, 0).toFixed(2);
 	};
+
+	console.log('Shopping cart',props.cart)
 
 	return (
 		<div className="shopping-cart">
