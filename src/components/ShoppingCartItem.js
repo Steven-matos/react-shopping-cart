@@ -11,7 +11,7 @@ const Item = props => {
 			<div>
 				<h1>{props.item.title}</h1>
 				<p>$ {props.item.price}</p>
-				<button>Remove from cart</button>
+				<button onClick={() => { props.removeItem(props.item.id)}}>Remove from cart</button>
 			</div>
 		</div>
 	);
