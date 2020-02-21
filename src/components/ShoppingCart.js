@@ -11,7 +11,7 @@ const ShoppingCart = () => {
 
 	const getCartTotal = () => {
 		return cart.reduce((acc, value) => {
-			return acc + value.item.price;
+			return acc + value.price;
 		}, 0).toFixed(2);
 	};
 

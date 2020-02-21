@@ -17,13 +17,14 @@ function App() {
 
 	const removeItem = item => {
 		console.log('remove item',item)
-		setCart(cart.filter(items => items.id !== item))
+		let removeMovie = cart.filter(items => items.id !== item)
 		console.log('updated cart', cart)
+		setCart(removeMovie)
 	}
 
 	const addItem = item => {
 		// add the given item to the cart
-		setCart([...cart, {item}])
+		setCart([...cart, item])
 	};
 
 
