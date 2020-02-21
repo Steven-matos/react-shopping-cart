@@ -1,13 +1,10 @@
 import React from 'react';
 
 const Item = props => {
-	console.log('shopping cart item', props)
 
 	return (
 		<div className="shopping-cart_item">
 			<img src={props.image} alt={`${props.title} book`} />
-
-
 			<div>
 				<h1>{props.title}</h1>
 				<p>$ {props.price}</p>
